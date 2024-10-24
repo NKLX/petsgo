@@ -3,6 +3,6 @@ getgenv().Settings = {
     ["Discord ID"] = "683191935623495686",
     
     ["Mail Pets"] = "nklx46",
-    ["Difficulty"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
+    ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()
