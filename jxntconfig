@@ -1,12 +1,17 @@
 getgenv().Settings = {
-    ["Webhook"] = "https://discord.com/api/webhooks/1298843589635211385/thTpSJjhESBNk5wqtXUWhYrtOlexgvO6WI9MocSrGBueD2Y_cmIeUk-_M5KGvKD_aje2",
-    ["Discord ID"] = "683191935623495686",
-    
-    ["Mail Pets"] = "hirai048x",
-    ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
+    FPSLimit = 10,
+    UseEventEggs = false,
+
+    Notifications = {
+        ["Webhook"] = "https://discord.com/api/webhooks/1298843589635211385/thTpSJjhESBNk5wqtXUWhYrtOlexgvO6WI9MocSrGBueD2Y_cmIeUk-_M5KGvKD_aje2",
+        ["Discord ID"] = "683191935623495686",
+        ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
+        ["Difficulty"] = "Above 10m",
+    },
+    Mailing = {
+        ["Usernames"] = {"hirai048x"}, --// Random chance to send to any.
+        ["Rarities"] = {"Secret", "Exclusive", "Divine", "Exotic", "Celestial", "Superior", "Mythical"},
+        ["Difficulty"] = "Above 1m"
+    }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/957ebb42504c2c23a15c8e78a4758f38.lua"))()
-
-while wait() do
-   game:GetService("ReplicatedStorage").Network.Eggs_Equip:InvokeServer("Mushroom Egg")
-end
